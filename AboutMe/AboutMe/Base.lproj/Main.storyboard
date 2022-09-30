@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="m68-wY-6Pv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="m68-wY-6Pv">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,24 +17,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My name is Tyler sun" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="47K-NC-0P5">
-                                <rect key="frame" x="74" y="90" width="267.5" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My name is Tyler sun" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="47K-NC-0P5">
+                                <rect key="frame" x="73" y="94" width="268" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="I am 19 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZBx-0c-ecS">
-                                <rect key="frame" x="167" y="169" width="81" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="kXo-ig-tac">
-                                <rect key="frame" x="94" y="238" width="226" height="168"/>
+                                <rect key="frame" x="57" y="178" width="300" height="168"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="I have never coded in my life but so far it is fun" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sTO-xx-SGP">
-                                <rect key="frame" x="37" y="498" width="340" height="132"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="I have never coded in my life but so far it is fun" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sTO-xx-SGP">
+                                <rect key="frame" x="69" y="540" width="276" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -41,20 +36,18 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.8894365730710968" green="1" blue="0.90392282660151602" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="ZBx-0c-ecS" firstAttribute="top" secondItem="47K-NC-0P5" secondAttribute="bottom" constant="43" id="3GI-x6-4UQ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sTO-xx-SGP" secondAttribute="bottom" constant="183" id="49e-vC-Uhp"/>
-                            <constraint firstItem="sTO-xx-SGP" firstAttribute="top" secondItem="kXo-ig-tac" secondAttribute="bottom" constant="92" id="CTM-WD-OJL"/>
-                            <constraint firstItem="kXo-ig-tac" firstAttribute="top" secondItem="ZBx-0c-ecS" secondAttribute="bottom" constant="48" id="NFK-GT-nhh"/>
-                            <constraint firstItem="sTO-xx-SGP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="QKH-sK-TdX"/>
-                            <constraint firstItem="kXo-ig-tac" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="94" id="Vhw-dn-7Hk"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sTO-xx-SGP" secondAttribute="trailing" constant="37" id="bLo-d7-QKJ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="47K-NC-0P5" secondAttribute="trailing" constant="72.5" id="gv9-n3-4sn"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZBx-0c-ecS" secondAttribute="trailing" constant="166" id="iWA-wg-WmO"/>
-                            <constraint firstItem="47K-NC-0P5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="46" id="khL-6j-htz"/>
-                            <constraint firstItem="ZBx-0c-ecS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="167" id="laE-Ua-808"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ZBx-0c-ecS" secondAttribute="bottom" constant="623" id="q4E-2g-0HK"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kXo-ig-tac" secondAttribute="trailing" constant="94" id="qSr-U1-vkI"/>
-                            <constraint firstItem="47K-NC-0P5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="74" id="zIz-q2-XKo"/>
+                            <constraint firstItem="kXo-ig-tac" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="57" id="0oY-Io-VTB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sTO-xx-SGP" secondAttribute="trailing" constant="69" id="18T-mn-Cwb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kXo-ig-tac" secondAttribute="trailing" constant="57" id="35j-0V-iRU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="47K-NC-0P5" secondAttribute="trailing" constant="73" id="5k7-4H-iNQ"/>
+                            <constraint firstItem="kXo-ig-tac" firstAttribute="top" secondItem="47K-NC-0P5" secondAttribute="bottom" constant="48" id="8H7-CS-ihD"/>
+                            <constraint firstItem="sTO-xx-SGP" firstAttribute="top" secondItem="kXo-ig-tac" secondAttribute="bottom" constant="194" id="CbO-QN-EMZ"/>
+                            <constraint firstItem="sTO-xx-SGP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="69" id="Fe7-mJ-sKv"/>
+                            <constraint firstItem="47K-NC-0P5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="46" id="b3C-AX-cI2"/>
+                            <constraint firstItem="47K-NC-0P5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hC4-53-pii"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sTO-xx-SGP" secondAttribute="bottom" constant="225" id="kdE-UI-8fG"/>
+                            <constraint firstItem="47K-NC-0P5" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nWX-jm-nqx"/>
+                            <constraint firstItem="kXo-ig-tac" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uZy-vv-CoM"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="MyLIfe" image="doc" catalog="system" selectedImage="doc.fill" id="Xho-fa-Yfp"/>
@@ -71,23 +64,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My family" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IXY-Xo-mnd">
-                                <rect key="frame" x="139" y="87" width="124" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Siblings" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IXY-Xo-mnd">
+                                <rect key="frame" x="132" y="306" width="150" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I have two siblings, I am also the oldest among them. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="63A-Pp-cAS">
-                                <rect key="frame" x="20" y="184" width="374" height="480"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="download 1" translatesAutoresizingMaskIntoConstraints="NO" id="tvN-UP-nNh">
+                                <rect key="frame" x="0.0" y="48" width="414" height="168"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I have two siblings a brother and sister, I am also the oldest among them. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="63A-Pp-cAS">
+                                <rect key="frame" x="50" y="492" width="314" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="chC-7B-QfV"/>
                         <color key="backgroundColor" systemColor="systemMintColor"/>
+                        <constraints>
+                            <constraint firstItem="63A-Pp-cAS" firstAttribute="top" secondItem="IXY-Xo-mnd" secondAttribute="bottom" constant="150" id="52P-MI-Zmb"/>
+                            <constraint firstItem="chC-7B-QfV" firstAttribute="trailing" secondItem="IXY-Xo-mnd" secondAttribute="trailing" constant="132" id="OwF-eV-HAl"/>
+                            <constraint firstItem="IXY-Xo-mnd" firstAttribute="leading" secondItem="chC-7B-QfV" secondAttribute="leading" constant="132" id="Qzf-Np-Z6c"/>
+                            <constraint firstItem="tvN-UP-nNh" firstAttribute="top" secondItem="chC-7B-QfV" secondAttribute="top" id="TYO-eX-ZaE"/>
+                            <constraint firstItem="63A-Pp-cAS" firstAttribute="leading" secondItem="chC-7B-QfV" secondAttribute="leading" constant="50" id="Ysk-2e-hZs"/>
+                            <constraint firstItem="chC-7B-QfV" firstAttribute="trailing" secondItem="tvN-UP-nNh" secondAttribute="trailing" id="c9u-ge-8Wb"/>
+                            <constraint firstItem="tvN-UP-nNh" firstAttribute="leading" secondItem="chC-7B-QfV" secondAttribute="leading" id="cqC-Ox-dcD"/>
+                            <constraint firstItem="IXY-Xo-mnd" firstAttribute="top" secondItem="tvN-UP-nNh" secondAttribute="bottom" constant="90" id="pBo-LG-KcU"/>
+                            <constraint firstItem="chC-7B-QfV" firstAttribute="trailing" secondItem="63A-Pp-cAS" secondAttribute="trailing" constant="50" id="xRY-KT-O9G"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Family" image="archivebox" catalog="system" selectedImage="archivebox.fill" id="urt-Hm-UOc"/>
                 </viewController>
@@ -103,23 +108,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="hobbies" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ePA-pa-AXG">
-                                <rect key="frame" x="148" y="117" width="118" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I like watching movies, playing videogames and basketball, I also like to paddleboard." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="blw-cu-jdI">
+                                <rect key="frame" x="90" y="267.5" width="234" height="155.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I like watching movies, playing videogames and basketball, I also like to paddleboard." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="blw-cu-jdI">
-                                <rect key="frame" x="74" y="237" width="266" height="303"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="download-1" translatesAutoresizingMaskIntoConstraints="NO" id="hep-ZL-6OI">
+                                <rect key="frame" x="130" y="505" width="154" height="168"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hobbies" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ePA-pa-AXG">
+                                <rect key="frame" x="150" y="168" width="114" height="33.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="580-Rt-yeS"/>
                         <color key="backgroundColor" red="1" green="0.76962403591619566" blue="0.75545974419406348" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="580-Rt-yeS" firstAttribute="trailing" secondItem="blw-cu-jdI" secondAttribute="trailing" constant="90" id="Hoc-MN-h1c"/>
+                            <constraint firstItem="hep-ZL-6OI" firstAttribute="top" secondItem="blw-cu-jdI" secondAttribute="bottom" constant="82" id="RCb-W3-8pK"/>
+                            <constraint firstItem="blw-cu-jdI" firstAttribute="top" secondItem="ePA-pa-AXG" secondAttribute="bottom" constant="66" id="VFw-hE-3Pe"/>
+                            <constraint firstItem="ePA-pa-AXG" firstAttribute="leading" secondItem="580-Rt-yeS" secondAttribute="leading" constant="150" id="dE2-FD-T4B"/>
+                            <constraint firstItem="580-Rt-yeS" firstAttribute="trailing" secondItem="hep-ZL-6OI" secondAttribute="trailing" constant="130" id="q7f-in-Mi2"/>
+                            <constraint firstItem="580-Rt-yeS" firstAttribute="trailing" secondItem="ePA-pa-AXG" secondAttribute="trailing" constant="150" id="sYS-wM-48e"/>
+                            <constraint firstItem="blw-cu-jdI" firstAttribute="leading" secondItem="580-Rt-yeS" secondAttribute="leading" constant="90" id="uAA-Ch-XeS"/>
+                            <constraint firstItem="hep-ZL-6OI" firstAttribute="leading" secondItem="580-Rt-yeS" secondAttribute="leading" constant="130" id="wAW-RL-x42"/>
+                            <constraint firstItem="ePA-pa-AXG" firstAttribute="top" secondItem="580-Rt-yeS" secondAttribute="top" constant="120" id="x3C-aO-SHh"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Hobbies" image="oval.portrait" catalog="system" selectedImage="oval.portrait.fill" id="yNY-SU-VmF"/>
                 </viewController>
@@ -133,6 +150,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="m68-wY-6Pv" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ll1-Jq-9Zi">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -148,13 +166,15 @@
         </scene>
     </scenes>
     <resources>
-        <image name="archivebox" catalog="system" width="128" height="106"/>
-        <image name="archivebox.fill" catalog="system" width="128" height="106"/>
+        <image name="archivebox" catalog="system" width="128" height="107"/>
+        <image name="archivebox.fill" catalog="system" width="128" height="107"/>
         <image name="doc" catalog="system" width="115" height="128"/>
         <image name="doc.fill" catalog="system" width="115" height="128"/>
         <image name="download" width="300" height="168"/>
-        <image name="oval.portrait" catalog="system" width="107" height="128"/>
-        <image name="oval.portrait.fill" catalog="system" width="107" height="128"/>
+        <image name="download 1" width="300" height="168"/>
+        <image name="download-1" width="300" height="168"/>
+        <image name="oval.portrait" catalog="system" width="104" height="128"/>
+        <image name="oval.portrait.fill" catalog="system" width="104" height="128"/>
         <systemColor name="systemMintColor">
             <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
