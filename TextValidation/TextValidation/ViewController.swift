@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     //try the black diamond part after checking off
     
     
+    
     @IBAction func loginButton(_ sender: Any) {
         let characterset = CharacterSet(charactersIn: specialCharacters)
     
@@ -28,7 +29,7 @@ class ViewController: UIViewController {
         } else {
             alertLabel.text = "Please enter password"
         }
-        
+     
         //        if (passWordTextField.text?)! = lowercase {
         //            alertLabel.text = "works"
         //        }
@@ -41,4 +42,11 @@ class ViewController: UIViewController {
         //    }
         
     }
+}
+
+func containLowerCase (_ value: String) -> Bool {
+    let regularExpression = ".*[a-z]+.*"
+    let predicate = NSPredicate(format: "Self Matches %@", regularExpression)
+    return !predicate.evaluate(with: value)
+    
 }
