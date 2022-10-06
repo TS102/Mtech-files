@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -40,13 +39,21 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pRO-gm-QJs">
+                                <rect key="frame" x="20" y="276" width="350" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemGray3Color"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZqW-Aa-H4R" secondAttribute="trailing" constant="80" id="9fb-lZ-9cz"/>
+                            <constraint firstItem="pRO-gm-QJs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="A6h-fL-975"/>
                             <constraint firstItem="Zu8-rx-OWb" firstAttribute="top" secondItem="ZqW-Aa-H4R" secondAttribute="bottom" constant="99" id="AZi-Ks-ChM"/>
                             <constraint firstItem="ZqW-Aa-H4R" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="ELJ-0e-p8Y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pRO-gm-QJs" secondAttribute="trailing" constant="20" id="I3F-LP-E1o"/>
                             <constraint firstItem="JAW-lM-KKg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="S0O-hG-Cw5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FE7-kp-Ti8" secondAttribute="trailing" constant="117" id="XLz-zg-sPQ"/>
                             <constraint firstItem="FE7-kp-Ti8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="117" id="jPC-18-SSP"/>
@@ -54,6 +61,7 @@
                             <constraint firstItem="ZqW-Aa-H4R" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="159" id="sNu-VN-dV5"/>
                             <constraint firstItem="Zu8-rx-OWb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="uNK-wb-o6d"/>
                             <constraint firstItem="JAW-lM-KKg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="69" id="xxD-53-jda"/>
+                            <constraint firstItem="pRO-gm-QJs" firstAttribute="top" secondItem="ZqW-Aa-H4R" secondAttribute="bottom" constant="36" id="yFw-dE-Z1B"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Zu8-rx-OWb" secondAttribute="trailing" constant="80" id="yPo-IL-tTw"/>
                             <constraint firstItem="FE7-kp-Ti8" firstAttribute="top" secondItem="Zu8-rx-OWb" secondAttribute="bottom" constant="94" id="yvw-uO-MRO"/>
                         </constraints>
@@ -61,6 +69,7 @@
                     <connections>
                         <outlet property="alertLabel" destination="JAW-lM-KKg" id="BXo-Yf-iH5"/>
                         <outlet property="loginButton" destination="FE7-kp-Ti8" id="s2o-US-yVi"/>
+                        <outlet property="passWordLabel" destination="pRO-gm-QJs" id="g4m-Ni-LdM"/>
                         <outlet property="passWordTextField" destination="Zu8-rx-OWb" id="f4x-rz-wng"/>
                         <outlet property="userNameTextField" destination="ZqW-Aa-H4R" id="dV3-LA-WXT"/>
                     </connections>
@@ -70,9 +79,4 @@
             <point key="canvasLocation" x="87.692307692307693" y="3.5545023696682461"/>
         </scene>
     </scenes>
-    <resources>
-        <systemColor name="systemGray3Color">
-            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-    </resources>
 </document>
